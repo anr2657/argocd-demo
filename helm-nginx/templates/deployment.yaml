@@ -21,3 +21,5 @@ spec:
           envFrom:
             - configMapRef:
                 name: nginx-config
+            - secretRef:
+                name: nginx-secret

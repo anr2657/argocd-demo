@@ -11,3 +11,12 @@ service:
 config:
   APP_ENV: dev
   LOG_LEVEL: info
+
+hpa:
+  enabled: true
+  minReplicas: 1
+  maxReplicas: 5
+  cpuUtilization: 70
+
+secret:
+  API_KEY: my-secret-key
