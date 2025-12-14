@@ -7,3 +7,7 @@ image:
 service:
   type: ClusterIP
   port: 80
+
+config:
+  APP_ENV: dev
+  LOG_LEVEL: info

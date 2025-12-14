@@ -2,7 +2,10 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ .Chart.Name }}
-  namespace: demo
+  namespace: demoa
+envFrom:
+  - configMapRef:
+      name: nginx-config
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
