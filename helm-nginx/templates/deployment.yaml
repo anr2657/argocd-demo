@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ .Chart.Name }}
-  namespace: demoa
+  namespace: demo
 envFrom:
   - configMapRef:
       name: nginx-config
